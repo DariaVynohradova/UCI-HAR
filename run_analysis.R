@@ -43,5 +43,9 @@ total_df <- cbind.data.frame("Subject"=total_subject$V1, "Activity"=total_label$
 ##### Group data set by subject and activity and apply mean function for all the variables
 final <- total_df %>% group_by(Subject, Activity) %>% summarise_all(mean) %>% view
 
-
+##### Export final data set in .txt format
+write.table(final, file = "C:/rlabwd/UCI HAR Dataset/final.txt", append = FALSE, quote = TRUE, sep = " ",
+            eol = "\n", na = "NA", dec = ".", row.names = FALSE,
+            col.names = TRUE, qmethod = c("escape", "double"),
+            fileEncoding = "")
 

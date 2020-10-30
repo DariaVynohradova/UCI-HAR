@@ -1,5 +1,5 @@
 ### UCI-HAR
-#### run_analysis.R script does the following:
+#### To complete the analysis you should do the following:
 * Merge the training and the test sets to create one data set.
 * Extract only the measurements on the mean and standard deviation for each feature.  From the features.txt data, keep the columns that match the pattern either "mean" or "std".
 * Use activity names ('WALKING', 'WALKING_UPSTAIRS', 'WALKING_DOWNSTAIRS', SITTING', 'STANDING', 'LAYING') to label the activities in the y_train.txt and y_test.txt.
